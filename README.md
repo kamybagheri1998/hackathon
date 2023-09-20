@@ -5,7 +5,7 @@
 ![](portfolio/problem_tree.png)
 
 ## Credits
-Jan Leon Greve
-Kamyab Bagherifar
-Maximilian Staas
+Jan Leon Greve\
+Kamyab Bagherifar\
+Maximilian Staas\
 Redon Kurta
