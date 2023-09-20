@@ -24,7 +24,8 @@ In order to ensure an equal and inclusive society, the opportinuties must be equ
 Without a means of accessing or centralizing the freely available resources, those of disadvantaged socio-economic backgrounds will have inequal access to modern, quality education.
 #### 1.1.2: Problem Tree
 ![](portfolio/problem_tree.png)
-
+#### 1.1.3: Student Persona
+![](portfolio/persona_student.png)
 ## Credits
 Jan Leon Greve\
 Kamyab Bagherifar\
