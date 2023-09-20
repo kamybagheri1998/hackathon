@@ -10,6 +10,10 @@ Solving this problem is important beacause it is nescessary to enable equal acce
 **Who is it a problem for?**\
 Students from disadvantaged socio-economic backgrounds.\
 \
+**What social/cultural factors shape this problem?**\
+This problem is shaped by the income and assets of the family.
+Families of a less fortunate background have less access to hardware.\
+\
 **What evidence do you have that this is worth the investment?**\
 There are many ways that a lack of hardware presents itself in the modern world.
 One big result of the lack of access to quality and digital education is the lack of qualified experts in the field of IT.
