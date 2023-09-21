@@ -18,7 +18,7 @@
 
 #### 1.1.1: DIY Problem Definition
 
-**What is the key issue you are tying to address and why is it important?**\
+**What is the key issue you are trying to address and why is it important?**\
 Due to socio-economic inequalities, acquiring the hardware necessary for education in the modern and increasingly digitalized world is not viable for every student.
 As a consequence, there is a limited chance of obtaining an optimal education.
 Solving this problem is important because it is necessary to enable equal access to education for every student to move towards a more equal world.\
@@ -32,7 +32,7 @@ Families of a less fortunate background have less access to hardware.\
 \
 **What evidence do you have that this is worth the investment?**\
 There are many ways that a lack of hardware presents itself in the modern world.
-One big result of the lack of access to quality and digital education is the lack of qualified experts in the field of IT.
+One big problem resulting from inadequate access to quality and digital education is the lack of qualified experts in the field of IT.
 Furthermore, lacking hardware hinders the development of homeschooling opportunities.\
 \
 **Can you think of this problem in a different way? Can you re-frame it?**\
@@ -49,7 +49,7 @@ Without a means of accessing or centralizing the freely available resources, tho
 
 ### 1.2: Peer Feedback
 
-The following feedback was provided by our peer group:
+Our peer group provided the following feedback:
 
 - Good design.
 - More personas could be considered.
