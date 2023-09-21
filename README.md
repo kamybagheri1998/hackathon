@@ -30,7 +30,7 @@ Without a means of accessing or centralizing the freely available resources, tho
 The following feedback was provided by our peer group:
 - Good design.
 - More personas could be considered.
-- Lack of knowledge should be considered as an aspect/cause.
+- Lack of technical know-how should be considered as an aspect/cause.
 ## 2: Prototype
 ## 3: Credits
 Jan Leon Greve\
