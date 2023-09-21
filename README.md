@@ -26,7 +26,13 @@ Without a means of accessing or centralizing the freely available resources, tho
 ![](portfolio/problem_tree.png)
 #### 1.1.3: Student Persona
 ![](portfolio/persona_student.png)
-## Credits
+### 1.2: Peer Feedback
+The following feedback was provided by our peer group:
+- Good design.
+- More personas could be considered.
+- Lack of knowledge should be considered as an aspect/cause.
+## 2: Prototype
+## 3: Credits
 Jan Leon Greve\
 Kamyab Bagherifar\
 Maximilian Staas\
