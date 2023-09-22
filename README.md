@@ -76,7 +76,7 @@ Our peer group provided the following feedback:
 
 - Good design.
 - More personas could be considered.
-- Lack of technical know-how should be considered as an aspect/cause.
+- Lack of technical know-how should be considered as an aspect/cause.\
 We immediately noticed your very attractive portfolio. We found it to be clearly designed and modern. We think your theme is contemporary and important. We would like to see one more exemplary person. We had the impression that you had a special target group in mind. You have worked out the problem of low hardware for students with low income very well. 
 We feel that the problem has not yet been fully thought through. In our opinion, another persona/target group would give you a new perspective on the problem as an example. We liked how we could discuss this in our common conversation. 
 In general, we think you guys have come up with a solid problem. Now we hope that you think about the necessary steps, such as: resetting the laptops and PCs, that the organization is regulated by the schools and whether the procurement of the devices is sufficient if the students can not operate them because there are no teachers who are trained.
