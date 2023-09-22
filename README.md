@@ -4,6 +4,7 @@
 * [Hackathon 23](#hackathon-23)
   * [0: About](#0-about)
     * [0.1: Current Stage](#01-current-stage)
+    * [0.2: Stages](#02-stages)
   * [1: Portfolio](#1-portfolio)
     * [1.1: Products](#11-products)
       * [1.1.1: DIY Problem Definition](#111-diy-problem-definition)
@@ -16,8 +17,23 @@
 
 ## 0: About
 ### 0.1: Current Stage
+**Problem Phase: Third Iteration**
+
 We are currently in the stage of refining our problem understanding and definition based on
 the feedback received from Niklas in the feedback round.
+
+### 0.2: Stages
+1. [x] Problem Phase: First Iteration
+2. [x] Problem Phase: Peer Feedback
+3. [x] Problem Phase: Second Iteration
+4. [x] Problem Phase: Teacher Feedback
+5. [ ] Problem Phase: Third Iteration
+6. [ ] Prototype Phase: Brainstorming
+7. [ ] Prototype Phase: Planning
+8. [ ] Prototype Phase: Sprint 1
+9. [ ] Prototype Phase: Sprint 2
+10. [ ] Prototype Phase: Sprint 3
+11. [ ] Presentation Phase
 
 ## 1: Portfolio
 
