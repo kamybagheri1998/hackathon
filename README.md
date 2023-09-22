@@ -2,6 +2,8 @@
 
 <!-- TOC -->
 * [Hackathon 23](#hackathon-23)
+  * [0: About](#0-about)
+    * [0.1: Current Stage](#01-current-stage)
   * [1: Portfolio](#1-portfolio)
     * [1.1: Products](#11-products)
       * [1.1.1: DIY Problem Definition](#111-diy-problem-definition)
@@ -11,6 +13,11 @@
   * [2: Prototype](#2-prototype)
   * [3: Credits](#3-credits)
 <!-- TOC -->
+
+## 0: About
+### 0.1: Current Stage
+We are currently in the stage of refining our problem understanding and definition based on
+the feedback received from Niklas in the feedback round.
 
 ## 1: Portfolio
 
