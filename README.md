@@ -12,7 +12,8 @@
       * [1.1.3: Student Persona](#113-student-persona)
     * [1.2: Peer Feedback](#12-peer-feedback)
   * [2: Prototype](#2-prototype)
-  * [3: Credits](#3-credits)
+  * [3: Personal Goals](#3-personal-goals)
+  * [4: Credits](#4-credits)
 <!-- TOC -->
 
 ## 0: About
@@ -108,7 +109,26 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 
 ## 2: Prototype
 
-## 3: Credits
+## 3: Personal Goals
+
+Jan Leon Greve:
+
+My personal goal is to increase my experience with UML and project planning,
+as well as Java backend programming.
+
+Kamyab Bagherifar:
+
+My ...
+
+Maximilian Staas:
+
+My ...
+
+Redon Kurta:
+
+My ...
+
+## 4: Credits
 
 Jan Leon Greve\
 Kamyab Bagherifar\
