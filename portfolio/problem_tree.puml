@@ -1,0 +1,48 @@
+@startuml
+
+caption Problem Tree
+center footer Version 3.0
+
+hexagon "Unequal access to hardware" as R
+
+rectangle "Consequences" as CO
+rectangle "Skilled worker shortage"\
+as CO1
+rectangle "Limited computer know-how"\
+as CO2
+rectangle "Limited opportunities"\
+as CO3
+rectangle "Fuels the cycle of poverty"\
+as CO4
+
+rectangle "Roots" as CA
+rectangle "Expense"\
+as CA1
+rectangle "Poverty"\
+as CA2
+rectangle "School preference"\
+as CA3
+rectangle "Lacking hardware in schools"\
+as CA4
+rectangle "Highly bureaucratic government aid"\
+as CA5
+rectangle "Hardware required in modern schooling"\
+as CA6
+
+R -u-> CO
+CO -u-> CO1
+CO -u-> CO2
+CO2 --> CO3
+CO3 --> CO4
+CO4 --> CO2
+
+R <-- CA
+CA <-- CA1
+CA1 <-- CA2
+CA1 <-- CA3
+CA <-- CA4
+CA <-- CA5
+CA4 <-- CA6
+
+@enduml
+

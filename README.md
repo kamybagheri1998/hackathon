@@ -7,7 +7,7 @@
     * [0.2: Stages](#02-stages)
   * [1: Portfolio](#1-portfolio)
     * [1.1: Products](#11-products)
-      * [1.1.1: DIY Problem Definition](#111-diy-problem-definition)
+      * [1.1.1: DIY Problem Definition 3.0](#111-diy-problem-definition-30)
       * [1.1.2: Problem Tree](#112-problem-tree)
       * [1.1.3: Student Persona](#113-student-persona)
     * [1.2: Peer Feedback](#12-peer-feedback)
@@ -39,32 +39,57 @@ the feedback received from Niklas in the feedback round.
 
 ### 1.1: Products
 
-#### 1.1.1: DIY Problem Definition
+#### 1.1.1: DIY Problem Definition 3.0
 
 **What is the key issue you are trying to address and why is it important?**\
-Due to socio-economic inequalities, acquiring the hardware necessary for education in the modern and increasingly digitalized world is not viable for every student.
-As a consequence, there is a limited chance of obtaining an optimal education.
-Solving this problem is important because it is necessary to enable equal access to education for every student to move towards a more equal world.\
+The key issue we are trying to address unequal access to hardware.\
+We see this issue as the main roadblock keeping students at every level
+of education from benefiting fully from modern technologies in education,
+such as digital and interactive media, game-based and gamified education, 
+digital learning platforms, and interactive video communication applications.\
+Such technologies have the potential to make education more efficient, effective, and individual by
+providing students with a more interactive, engaging, and personal learning experience while also
+accelerating group collaboration and growing the critical social and technical skills needed in many modern occupations.
+These methods can help teachers and administrators teach, organize, and interact with their students faster and more effectively. 
+Moreover, they may enable parents to better track their children's progress and get feedback from their teachers.
 \
 **Who is it a problem for?**\
-Students from disadvantaged socio-economic backgrounds.\
+This issue impacts:
+
+- Students from socio-economically disadvantaged backgrounds
+- Teachers
+- Parents
+
 \
 **What social/cultural factors shape this problem?**\
-This problem is shaped by the income and assets of the family.
-Families of a less fortunate background have less access to hardware.\
+This problem is shaped by:
+
+_Socio-economic background._
+A disadvantaged socio-economic background may prevent students and parents from financing necessary or desired hardware.
+
+_Socio-cultural background._
+Lacking access to hardware can hinder students in socialization in the personal and educational context
+and may even lead to social ostracization of students by their peers.
+
 \
 **What evidence do you have that this is worth the investment?**\
-There are many ways that a lack of hardware presents itself in the modern world.
-One big problem resulting from inadequate access to quality and digital education is the lack of qualified experts in the field of IT.
-Furthermore, lacking hardware hinders the development of homeschooling opportunities.\
+One of the most evident consequences of lacking IT know-how is the
+well-known skilled worker shortage in Germany. As reported by the [tagesschau](https://www.tagesschau.de/wirtschaft/it-berufe-fachkraftemangel-rekord-100.html),
+almost 68000 IT jobs remain unfilled. If students had earlier and more substantial
+access to hardware, such shortages may not have occurred.
+
 \
-**Can you think of this problem in a different way? Can you re-frame it?**\
-In order to ensure an equal and inclusive society, the opportunities must be equal for all students, regardless of background.
-Without a means of accessing or centralizing the freely available resources, those of disadvantaged socio-economic backgrounds will have unequal access to modern, quality education.
+**Can you think of this problem in a different way? Can you re-frame it?**
+
+Children from disadvantaged backgrounds have limited opportunities to socialize,
+especially in the digital realm, where gaming in Fortnite becomes an important cornerstone
+in every youth's afternoon. By providing the youth with the hardware they
+lack, they will be able to socialize in modern mediums such as Gaming, reducing their
+social exclusion due to their socio-economic status.
 
 #### 1.1.2: Problem Tree
 
-![Problem Tree](portfolio/problem_tree.png)
+![Problem Tree](portfolio/problem_tree.svg)
 
 #### 1.1.3: Student Persona
 
