@@ -1,11 +1,11 @@
 @startuml
 
 caption Problem Tree
-center footer Version 3.0
+center footer Version 3.1
 
 hexagon "Unequal access to hardware" as R
 
-rectangle "Consequences" as CO
+label "Consequences" as CO
 rectangle "Skilled worker shortage"\
 as CO1
 rectangle "Limited computer know-how"\
@@ -15,7 +15,7 @@ as CO3
 rectangle "Fuels the cycle of poverty"\
 as CO4
 
-rectangle "Roots" as CA
+label "Roots" as CA
 rectangle "Expense"\
 as CA1
 rectangle "Poverty"\
@@ -45,4 +45,3 @@ CA <-- CA5
 CA4 <-- CA6
 
 @enduml
-
