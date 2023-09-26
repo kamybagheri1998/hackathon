@@ -10,6 +10,8 @@
       * [1.1.1: DIY Problem Definition 3.0](#111-diy-problem-definition-30)
       * [1.1.2: Problem Tree](#112-problem-tree)
       * [1.1.3: Student Persona](#113-student-persona)
+      * [1.1.4: Parent Persona](#114-parent-persona)
+      * [1.1.5: Teacher Persona](#115-teacher-persona)
     * [1.2: Peer Feedback](#12-peer-feedback)
   * [2: Prototype](#2-prototype)
   * [3: Personal Goals](#3-personal-goals)
@@ -94,7 +96,15 @@ social exclusion due to their socio-economic status.
 
 #### 1.1.3: Student Persona
 
-![Student Persona](portfolio/persona_student.png)
+![Student Persona](portfolio/persona_student.svg)
+
+#### 1.1.4: Parent Persona
+
+![Student Persona](portfolio/persona_parent.svg)
+
+#### 1.1.5: Teacher Persona
+
+![Student Persona](portfolio/persona_teacher.svg)
 
 ### 1.2: Peer Feedback
 
@@ -102,7 +112,8 @@ Our peer group provided the following feedback:
 
 - Good design.
 - More personas could be considered.
-- Lack of technical know-how should be considered as an aspect/cause.\
+- Lack of technical know-how should be considered as an aspect/cause.
+
 We immediately noticed your very attractive portfolio. We found it to be clearly designed and modern. We think your theme is contemporary and important. We would like to see one more exemplary person. We had the impression that you had a special target group in mind. You have worked out the problem of low hardware for students with low income very well. 
 We feel that the problem has not yet been fully thought through. In our opinion, another persona/target group would give you a new perspective on the problem as an example. We liked how we could discuss this in our common conversation. 
 In general, we think you guys have come up with a solid problem. Now we hope that you think about the necessary steps, such as: resetting the laptops and PCs, that the organization is regulated by the schools and whether the procurement of the devices is sufficient if the students can not operate them because there are no teachers who are trained.
