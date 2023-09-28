@@ -40,7 +40,9 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-core:$versionExposed")
     implementation("org.jetbrains.exposed:exposed-jdbc:$versionExposed")
     implementation("com.h2database:h2:$versionH2")
+    implementation("org.postgresql:postgresql:42.3.1")
 
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$versionKotlin")
+
 }
