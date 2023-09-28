@@ -1,0 +1,30 @@
+@startmindmap
+
+caption Technical Mindmap
+center footer Version 3.0
+
+* Technical Aspects
+
+** Orchestration
+*** Docker Compose
+
+** Version Control
+*** Git
+**** Github
+
+** Project Management
+*** Agile
+**** Scrum
+*** Board
+**** Trello
+
+** Frontend
+*** Vue
+
+** Backend
+*** Java
+*** Rest API
+*** Database
+**** Postgres
+
+@endmindmap

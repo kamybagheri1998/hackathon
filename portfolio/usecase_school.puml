@@ -1,0 +1,31 @@
+@startuml
+
+caption School Usecase
+center footer Version 3.0
+
+left to right direction
+
+:School Admin: as SA
+:Student: as S
+
+rectangle "Hardware Loan System" {
+(Registration) as (U1)
+(Return hardware) as (U2)
+(Login) as (U3)
+(Order) as (U4)
+(Submit contract) as (U5)
+(Sign contract) as (U6)
+
+(U4) ..> (U3) : include
+(U5) ..> (U3) : include
+(U5) ...> (U6) : include
+}
+
+SA --> (U1)
+SA --> (U2)
+SA --> (U4)
+SA --> (U5)
+
+S -> (U6)
+
+@enduml

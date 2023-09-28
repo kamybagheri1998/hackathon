@@ -1,0 +1,23 @@
+@startuml
+
+caption Business Usecase
+center footer Version 3.0
+
+left to right direction
+
+:Business User: as BU
+
+rectangle "Hardware Loan System" {
+(Read info-page / watch video) as (U1)
+(Donate money) as (U2)
+(Donate hardware) as (U3)
+
+(U2) .> (U1) : include
+(U3) .> (U1) : include
+}
+
+BU --> (U1)
+BU --> (U2)
+BU --> (U3)
+
+@enduml

@@ -12,6 +12,10 @@
       * [1.1.3: Student Persona](#113-student-persona)
       * [1.1.4: Parent Persona](#114-parent-persona)
       * [1.1.5: Teacher Persona](#115-teacher-persona)
+      * [1.1.6 Ideation Mindmap](#116-ideation-mindmap)
+      * [1.1.7 School Usecase](#117-school-usecase)
+      * [1.1.8 Business Usecase](#118-business-usecase)
+      * [1.1.9 Technical Mindmap](#119-technical-mindmap)
     * [1.2: Peer Feedback](#12-peer-feedback)
   * [2: Prototype](#2-prototype)
   * [3: Personal Goals](#3-personal-goals)
@@ -55,6 +59,7 @@ providing students with a more interactive, engaging, and personal learning expe
 accelerating group collaboration and growing the critical social and technical skills needed in many modern occupations.
 These methods can help teachers and administrators teach, organize, and interact with their students faster and more effectively. 
 Moreover, they may enable parents to better track their children's progress and get feedback from their teachers.
+
 \
 **Who is it a problem for?**\
 This issue impacts:
@@ -105,6 +110,22 @@ social exclusion due to their socio-economic status.
 #### 1.1.5: Teacher Persona
 
 ![Student Persona](portfolio/persona_teacher.svg)
+
+#### 1.1.6 Ideation Mindmap
+
+![Ideation Mindmap](portfolio/ideation_mindmap.svg)
+
+#### 1.1.7 School Usecase
+
+![School Usecase](portfolio/usecase_school.svg)
+
+#### 1.1.8 Business Usecase
+
+![Business Usecase](portfolio/usecase_business.svg)
+
+#### 1.1.9 Technical Mindmap
+
+![Technical Mindmap](portfolio/technical_mindmap.svg)
 
 ### 1.2: Peer Feedback
 
