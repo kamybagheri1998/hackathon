@@ -1,5 +1,6 @@
 package com.bs14.plugins
 
+import LoanService
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
@@ -15,9 +16,10 @@ fun Application.configureDatabases() {
             password = "postgres"
     )
     val userService = UserService(database)
+    val loanService = LoanService(database)
     routing {
         // Create user
-        post("/users") {
+        /*post("/users") {
             val user = call.receive<ExposedUser>()
             val id = userService.create(user)
             call.respond(HttpStatusCode.Created, id)
@@ -44,6 +46,6 @@ fun Application.configureDatabases() {
             val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
             userService.delete(id)
             call.respond(HttpStatusCode.OK)
-        }
+        }*/
     }
 }

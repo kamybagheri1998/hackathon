@@ -27,6 +27,9 @@ repositories {
 dependencies {
     implementation("ch.qos.logback:logback-classic:$versionLogback")
 
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
+    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.44.0")
+
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-auth-jvm")
     implementation("io.ktor:ktor-server-sessions-jvm")
