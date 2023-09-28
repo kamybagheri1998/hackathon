@@ -1,0 +1,39 @@
+@startuml
+
+caption Loan Endpoint
+center footer Version 1.0
+
+start
+
+:Request to /loan;
+
+fork
+:GET;
+:Return order history;
+end
+fork again
+:POST;
+:Place initial order;
+if (Sufficient hardware) then
+:Return order id;
+end
+else
+:Return error;
+end
+endif
+fork again
+:DELETE;
+:Delete order by id;
+if (Order exists) then
+:Return success;
+end
+else
+:Return error;
+end
+endif
+fork again
+:PUT;
+:Update loan data\rbased on provided\rquery parameters;
+end
+
+@enduml

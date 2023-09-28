@@ -19,6 +19,7 @@
   * [2: Prototype](#2-prototype)
     * [2.1: Products](#21-products)
       * [2.1.1: Technical Mindmap](#211-technical-mindmap)
+      * [2.1.2: Loan Endpoint](#212-loan-endpoint)
   * [3: Personal Goals](#3-personal-goals)
   * [4: Credits](#4-credits)
 <!-- TOC -->
@@ -143,6 +144,10 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 #### 2.1.1: Technical Mindmap
 
 ![Technical Mindmap](prototype/technical_mindmap.svg)
+
+#### 2.1.2: Loan Endpoint
+
+![Loan Endpoint](prototype/loan_endpoint.svg)
 
 ## 3: Personal Goals
 
