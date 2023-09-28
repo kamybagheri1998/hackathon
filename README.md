@@ -15,9 +15,10 @@
       * [1.1.6 Ideation Mindmap](#116-ideation-mindmap)
       * [1.1.7 School Usecase](#117-school-usecase)
       * [1.1.8 Business Usecase](#118-business-usecase)
-      * [1.1.9 Technical Mindmap](#119-technical-mindmap)
     * [1.2: Peer Feedback](#12-peer-feedback)
   * [2: Prototype](#2-prototype)
+    * [2.1: Products](#21-products)
+      * [2.1.1: Technical Mindmap](#211-technical-mindmap)
   * [3: Personal Goals](#3-personal-goals)
   * [4: Credits](#4-credits)
 <!-- TOC -->
@@ -123,10 +124,6 @@ social exclusion due to their socio-economic status.
 
 ![Business Usecase](portfolio/usecase_business.svg)
 
-#### 1.1.9 Technical Mindmap
-
-![Technical Mindmap](portfolio/technical_mindmap.svg)
-
 ### 1.2: Peer Feedback
 
 Our peer group provided the following feedback:
@@ -140,6 +137,12 @@ We feel that the problem has not yet been fully thought through. In our opinion,
 In general, we think you guys have come up with a solid problem. Now we hope that you think about the necessary steps, such as: resetting the laptops and PCs, that the organization is regulated by the schools and whether the procurement of the devices is sufficient if the students can not operate them because there are no teachers who are trained.
 
 ## 2: Prototype
+
+### 2.1: Products
+
+#### 2.1.1: Technical Mindmap
+
+![Technical Mindmap](prototype/technical_mindmap.svg)
 
 ## 3: Personal Goals
 
