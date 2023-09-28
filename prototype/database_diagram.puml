@@ -1,0 +1,58 @@
+@startuml
+
+caption Database Diagram
+center footer Version 1.0
+
+entity USER {
+* ID uuid
+--
+* ACTIVATED boolean
+* EMAIL varchar(256)
+* INSTITUTE varchar(256)
+}
+
+enum LOAN_STATUS {
+IN_PROCESSING
+ACCEPTED
+DECLINED
+}
+
+entity LOAN {
+* ID uuid
+* USER_ID uuid
+--
+* CREATE_DATE datetime
+* START_DATE datetime
+END_DATE datetime
+* STATUS loan_status
+}
+
+enum DEVICE_TYPE {
+LAPTOP
+TABLET
+DESKTOP
+}
+
+entity DEVICE {
+* ID uuid
+--
+* TYPE device_type
+DONOR varchar(64)
+* MODEL varchar(64)
+* SERIAL varchar(64)
+}
+
+entity LOAN_DEVICE {
+* ID uuid
+* LOAN_ID uuid
+* DEVICE_ID uuid
+}
+
+USER --o{ LOAN
+LOAN --|| LOAN_STATUS
+
+LOAN_DEVICE --|| LOAN
+LOAN_DEVICE --|| DEVICE
+DEVICE --|| DEVICE_TYPE
+
+@enduml
