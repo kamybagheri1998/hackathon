@@ -1,10 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> HeartWare Home</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+  <link rel="icon" type="image/x-icon" href="../assets/logo_heart.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="../styles/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+
+  <link href="../styles/carousel.css" rel="stylesheet">
 </head>
 <body>
 
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img src="../assets/logo_heart.png" width="50" height="50">
+      <a class="m-lg-2 navbar-brand" href="index.html">HeartWare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign-in.html">Log In for Schools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="companyInfoPage.html">Info Page for Companies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  </div>
+
+  <div class="container marketing">
+
+    <div class="row">
+    </div>
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Lorem ipsum dolor sit amet, <span
+                class="text-body-secondary">consetetur sadipscing elitr, </span></h2>
+        <p class="lead">sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
+      </div>
+      <div class="col-md-5">
+        <img src="../assets/crying_businessman_2.png" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Stet clita kasd gubergren, <span
+                class="text-body-secondary">no sea takimata sanctus</span></h2>
+        <p class="lead">est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="../assets/pc_present.png" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">ed diam voluptua. <span
+                class="text-body-secondary">At vero eos et accusam </span></h2>
+        <p class="lead">et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="../assets/school_2.png" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+  </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 1910-2023 HeartWare, Inc. &middot; <a href="https://www.fcstpauli.com/">Privacy</a>
+      &middot; <a href="https://www.fcstpauli.com/">Terms</a></p>
+  </footer>
+</main>
+<script src="../scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
