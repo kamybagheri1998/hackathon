@@ -8,7 +8,8 @@ document.getElementById("signInForm").addEventListener("submit", function (e) {
     username: email,
     password: password
   };
-  //TODO add post api url
+  // TODO add post api url
+  // TODO see order placed html for div with invalid email etc. -> turn visible on bad input
   fetch('', {
     method: 'POST',
     headers: {
