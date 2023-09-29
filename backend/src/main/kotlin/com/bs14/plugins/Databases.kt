@@ -1,5 +1,7 @@
 package com.bs14.plugins
 
+import DeviceLoanService
+import DeviceService
 import LoanService
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -10,13 +12,15 @@ import org.jetbrains.exposed.sql.*
 
 fun Application.configureDatabases() {
     val database = Database.connect(
-            url = "jdbc:postgresql://localhost:5432/postgres",
-            user = "postgres",
-            driver = "org.postgresql.Driver",
-            password = "postgres"
+        url = "jdbc:postgresql://localhost:5432/postgres",
+        user = "postgres",
+        driver = "org.postgresql.Driver",
+        password = "postgres"
     )
     val userService = UserService(database)
     val loanService = LoanService(database)
+    val deviceService = DeviceService(database)
+    val deviceLoanService = DeviceLoanService(database)
     routing {
         // Create user
         /*post("/users") {
