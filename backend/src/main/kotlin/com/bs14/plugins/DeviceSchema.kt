@@ -5,44 +5,43 @@ import org.jetbrains.exposed.sql.kotlin.datetime.datetime
 import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction
 import org.jetbrains.exposed.sql.transactions.transaction
 
-class LoanService(private val database: Database) {
-    object LoanStatus : Table() {
+class DeviceService(private val database: Database) {
+    object DeviceType : Table() {
         val id = integer("id").autoIncrement()
         val name = varchar("name", 12)
 
         override val primaryKey = PrimaryKey(id)
     }
 
-    object Loan : Table() {
-        val id = integer("id")
-        val userid = reference("user_id", UserService.User.id)
-        val createDate = datetime("create_date")
-        val startDate = datetime("start_date")
-        val endDate = datetime("end_date")
-        val status = reference("status", LoanStatus.id)
+    object Device : Table() {
+        val id = uuid("id")
+        val type = reference("type_id", DeviceType.id)
+        val donor = varchar("donor", length = 256)
+        val model = varchar("model", length = 256)
+        val serialNumber = varchar("serialNumber", length = 256)
 
         override val primaryKey = PrimaryKey(id)
     }
 
     init {
         transaction(database) {
-            SchemaUtils.create(LoanStatus)
+            SchemaUtils.create(DeviceType)
 
-            LoanStatus.deleteAll()
-            LoanStatus.insert {
-                it[name] = "IN_PROCESS"
+            DeviceType.deleteAll()
+            DeviceType.insert {
+                it[name] = "LAPTOP"
                 it[id] = 1
             }
-            LoanStatus.insert {
-                it[name] = "ACCEPTED"
+            DeviceType.insert {
+                it[name] = "Tablet"
                 it[id] = 2
             }
-            LoanStatus.insert {
-                it[name] = "DECLINED"
+            DeviceType.insert {
+                it[name] = "Desktop"
                 it[id] = 3
             }
 
-            SchemaUtils.create(Loan)
+            SchemaUtils.create(Device)
         }
     }
 
