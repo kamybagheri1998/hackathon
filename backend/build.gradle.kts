@@ -27,8 +27,7 @@ repositories {
 dependencies {
     implementation("ch.qos.logback:logback-classic:$versionLogback")
 
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
-    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.44.0")
+    //runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
 
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-auth-jvm")
@@ -39,13 +38,15 @@ dependencies {
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
     implementation("io.ktor:ktor-serialization-kotlinx-json-jvm")
     implementation("io.ktor:ktor-server-netty-jvm")
+    testImplementation("io.ktor:ktor-server-tests-jvm")
 
     implementation("org.jetbrains.exposed:exposed-core:$versionExposed")
     implementation("org.jetbrains.exposed:exposed-jdbc:$versionExposed")
-    implementation("com.h2database:h2:$versionH2")
-    implementation("org.postgresql:postgresql:42.3.1")
+    implementation("org.jetbrains.exposed:exposed-dao:$versionExposed")
+    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:$versionExposed")
 
-    testImplementation("io.ktor:ktor-server-tests-jvm")
+    implementation("org.postgresql:postgresql:42.3.8")
+
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$versionKotlin")
 
 }
