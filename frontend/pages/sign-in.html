@@ -70,17 +70,23 @@
 </header>
 
 <main class="form-signin w-100 m-auto text-center">
-  <form id="signInForm">
+  <form id="signInForm" class="needs-validation" novalidate>
     <img class="mb-4" src="../assets/logo_full.png" alt="" width="200" height="100">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="signInEmail" placeholder="name@example.com">
+      <input type="email" class="form-control" id="signInEmail" placeholder="name@example.com" required>
       <label for="signInEmail">Email address</label>
+      <div class="invalid-feedback">
+        Valid email is required.
+      </div>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="signInPassword" placeholder="Password">
+      <input type="password" class="form-control" id="signInPassword" placeholder="Password" required>
       <label for="signInPassword">Password</label>
+      <div class="invalid-feedback">
+        Valid password is required.
+      </div>
     </div>
     <button class="btn btn-secondary w-100 py-2" type="submit">Sign in</button>
     <p></p>
@@ -91,19 +97,43 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header p-5 pb-4 border-bottom-0">
-          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+          <h1 class="fw-bold mb-0 fs-2">Sign up now!</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="modal-body p-5 pt-0">
-          <form class="">
+          <form class="needs-validation" novalidate>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control rounded-3" id="signUpEmail" placeholder="name@example.com">
-              <label for="signUpEmail">Email address</label>
+              <input type="text" class="form-control rounded-3" id="signUpContactPerson"
+                     placeholder="Walter Frosch" required>
+              <label for="signUpContactPerson">Contact person</label>
+              <div class="invalid-feedback">
+                Valid contact person name is required.
+              </div>
             </div>
             <div class="form-floating mb-3">
-              <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+              <input type="text" class="form-control rounded-3" id="signUpInstitute"
+                     placeholder="Hogwarts" required>
+              <label for="signUpInstitute">Institute name</label>
+              <div class="invalid-feedback">
+                Valid institute name is required.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="signUpEmail"
+                     placeholder="name@example.com" required>
+              <label for="signUpEmail">Email address</label>
+              <div class="invalid-feedback">
+                Valid email is required.
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="signUpPassword"
+                     placeholder="Password" required>
               <label for="signUpPassword">Password</label>
+              <div class="invalid-feedback">
+                Valid password is required.
+              </div>
             </div>
             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-secondary" type="submit">Sign up</button>
             <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
@@ -118,6 +148,7 @@
       &middot; <a href="https://www.fcstpauli.com/">Terms</a></p>
   </footer>
 </main>
+<script src="../scripts/formValidator.js"></script>
 <script src="../scripts/bootstrap.bundle.min.js"></script>
 <script src="../scripts/loginAndSignup.js"></script>
 </body>

@@ -155,7 +155,27 @@
               </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-sm-6">
+              <label for="startDate" class="form-label">Start date</label>
+              <div class="input-group has-validation">
+                <input type="date" class="form-control" id="startDate" required>
+                <div class="invalid-feedback">
+                  Start date is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="endDate" class="form-label">End date</label>
+              <div class="input-group has-validation">
+                <input type="date" class="form-control" id="endDate" required>
+                <div class="invalid-feedback">
+                  End date is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
               <label for="username" class="form-label">Username</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
@@ -187,7 +207,7 @@
 </main>
 </div>
 <script src="../scripts/bootstrap.bundle.min.js"></script>
-<script src="../scripts/orderPlaceForm.js"></script>
+<script src="../scripts/formValidator.js"></script>
 </body>
 </body>
 </html>

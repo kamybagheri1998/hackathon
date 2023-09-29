@@ -1,4 +1,12 @@
 document.getElementById("signInForm").addEventListener("submit", function (e) {
+  if (!document.getElementById("signInForm").checkValidity()) {
+    e.preventDefault()
+    e.stopPropagation()
+    return;
+  }
+
+  document.getElementById("signInForm").classList.add('was-validated');
+
   e.preventDefault();
 
   const email = document.getElementById("signInEmail").value;
