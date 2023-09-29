@@ -171,7 +171,8 @@ My ...
 
 Redon Kurta:
 
-My personal goal describes my desire to expand my Java Programming skills and get more in depth with UML and project management
+My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth with UML 
+and project management.
 
 ## 4: Credits
 
