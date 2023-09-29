@@ -159,7 +159,7 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 Jan Leon Greve:
 
 My personal goal is to increase my experience with UML and project planning,
-as well as Java backend programming.
+as well as Kotlin backend programming.
 
 Kamyab Bagherifar:
 
