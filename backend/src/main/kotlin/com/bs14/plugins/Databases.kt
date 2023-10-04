@@ -12,7 +12,7 @@ import org.jetbrains.exposed.sql.*
 
 fun Application.configureDatabases() {
     val database = Database.connect(
-        url = "jdbc:postgresql://localhost:5432/postgres",
+        url = "jdbc:postgresql://database:5432/postgres",
         user = "postgres",
         driver = "org.postgresql.Driver",
         password = "postgres"
