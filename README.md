@@ -28,10 +28,9 @@
 
 ## 0: About
 ### 0.1: Current Stage
-**Prototype Phase: Sprint 1**
+**Prototype Phase: Sprint 2**
 
-We are currently in the stage of refining our problem understanding and definition based on
-the feedback received from Niklas in the feedback round.
+We are currently in the stage of implementing and refining our solution.
 
 ### 0.2: Stages
 1. [x] Problem Phase: First Iteration
@@ -41,7 +40,7 @@ the feedback received from Niklas in the feedback round.
 5. [x] Problem Phase: Third Iteration
 6. [x] Prototype Phase: Brainstorming
 7. [x] Prototype Phase: Planning
-8. [ ] Prototype Phase: Sprint 1
+8. [x] Prototype Phase: Sprint 1
 9. [ ] Prototype Phase: Sprint 2
 10. [ ] Prototype Phase: Sprint 3
 11. [ ] Presentation Phase
