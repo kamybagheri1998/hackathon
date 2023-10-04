@@ -1,7 +1,7 @@
 @startmindmap
 
 caption Technical Mindmap
-center footer Version 3.0
+center footer Version 3.1
 
 * Technical Aspects
 
@@ -20,9 +20,10 @@ center footer Version 3.0
 
 ** Frontend
 *** Vue
+*** Bootstrap
 
 ** Backend
-*** Java
+*** Kotlin
 *** Rest API
 *** Database
 **** Postgres
