@@ -20,7 +20,8 @@
     * [2.1: Products](#21-products)
       * [2.1.1: Technical Mindmap](#211-technical-mindmap)
       * [2.1.2: Loan Endpoint](#212-loan-endpoint)
-      * [2.1.3: Database Diagram](#213-database-diagram)
+      * [2.1.3: User Endpoint](#213-user-endpoint)
+      * [2.1.4: Database Diagram](#214-database-diagram)
   * [3: Personal Goals](#3-personal-goals)
   * [4: Credits](#4-credits)
 <!-- TOC -->
@@ -150,7 +151,11 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 
 ![Loan Endpoint](prototype/loan_endpoint.svg)
 
-#### 2.1.3: Database Diagram
+#### 2.1.3: User Endpoint
+
+![Loan Endpoint](prototype/user_endpoint.svg)
+
+#### 2.1.4: Database Diagram
 
 ![Loan Endpoint](prototype/database_diagram.svg)
 

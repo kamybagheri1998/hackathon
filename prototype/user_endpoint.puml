@@ -1,0 +1,64 @@
+@startuml
+
+caption User Endpoint
+center footer Version 1.0
+
+start
+
+:Request to /user;
+
+fork
+:GET;
+:Login;
+if (Credentials correct) then
+:Return session;
+end
+else
+:Return error;
+end
+endif
+fork again
+:POST;
+:Submit registration;
+if (Registration info valid) then
+:Create inactive user entry
+for followup by admins;
+:Return success;
+end
+else
+:Return error;
+end
+endif
+fork again
+:DELETE;
+:Delete account;
+if (Has pending order) then
+:Return error;
+end
+else
+if (Has active order) then
+:Return error;
+end
+else
+:Delete account data
+from database;
+:Redirect to homepage;
+end
+endif
+endif
+fork again
+:PUT;
+:Update user data
+based on provided
+query parameters;
+if (Session is valid) then
+if (New data is valid) then
+:Update data;
+:Return success;
+end
+endif
+endif
+:Return error;
+end
+
+@enduml
