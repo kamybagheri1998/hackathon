@@ -65,3 +65,9 @@ Temporary Items
 .apdisk
 ./docker/data
 ./.idea/
+/docker/vol_database
+/docker/vol_gradle
+!/docker/vol_gradle/entry.sh
+!/docker/vol_gradle/init.gradle.kts
+/docker/vol_webapp/
+!/docker/vol_webapp/entry.sh

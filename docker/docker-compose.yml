@@ -1,15 +1,54 @@
 version: '3.8'
+volumes:
+  src_backend:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: "./../backend"
+  src_frontend:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: "./../frontend"
 services:
-  db:
+  database:
     image: postgres:14.1-alpine
-    restart: always
+    container_name: hardloan_database
+    restart: unless-stopped
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5432:5432'
     volumes:
-      - ./data:/var/lib/postgresql/data
-volumes:
-  db:
-    driver: local
+      - ./vol_database:/var/lib/postgresql/data
+  gradle:
+    image: gradle:8.3-jdk17-alpine
+    container_name: hardloan_gradle
+    restart: no
+    working_dir: /workdir
+    entrypoint: /workdir/entry.sh
+    volumes:
+      - src_backend:/backend
+      - src_frontend:/frontend
+      - ./vol_gradle:/workdir
+      - ./vol_webapp:/webapp
+  webapp:
+    image: azul/zulu-openjdk-alpine:17-latest
+    container_name: hardloan_webapp
+    restart: no
+    working_dir: /webapp
+    entrypoint: sh /webapp/entry.sh
+    depends_on:
+      gradle:
+        condition: service_completed_successfully
+      database:
+        condition: service_started
+    volumes:
+      - ./vol_webapp:/webapp
+    links:
+      - database:database
+    ports:
+      - "8080:8080"
