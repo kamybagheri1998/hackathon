@@ -24,7 +24,7 @@ fun Application.configureDatabases() {
     val deviceLoanService = DeviceLoanService(database)
     routing {
         // Create user
-        post("/users") {
+        post("/user") {
             val email = call.request.queryParameters["email"]
             val institute = call.request.queryParameters["institute"]
             val password = call.request.queryParameters["password"]

@@ -12,32 +12,62 @@ document.getElementById("signInForm").addEventListener("submit", function (e) {
   const email = document.getElementById("signInEmail").value;
   const password = document.getElementById("signInPassword").value;
 
-  const credentials = {
-    username: email,
-    password: password
-  };
   // TODO add post api url
   // TODO see order placed html for div with invalid email etc. -> turn visible on bad input
-  fetch('', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(credentials)
-  })
+  fetch('http://localhost:5432/user?' + new URLSearchParams({
+    email: email,
+    password: password
+  }), {method: 'GET'})
   .then(response => response.json())
   .then(data => {
     if (data.success) {
-      // TODO maybe a modal?
       // TODO add login token
-      // TODO add correct url
-      window.location.replace("http://localhost:8080/");
+      window.location.replace("schoolPortal.html");
     } else {
-      window.location.replace("https://www.google.com");
+      document.getElementById("failToastSignIn").classList.remove("d-none")
     }
   })
   .catch(error => {
     console.error('Error:', error);
     window.location.replace("error.html");
+  });
+});
+
+document.getElementById("signUpForm").addEventListener("submit", function (e) {
+  if (!document.getElementById("signUpForm").checkValidity()) {
+    e.preventDefault()
+    e.stopPropagation()
+    return;
+  }
+
+  document.getElementById("signUpForm").classList.add('was-validated');
+
+  e.preventDefault();
+
+  const email = document.getElementById("signUpEmail").value;
+  const institute = document.getElementById("signUpInstitute").value;
+  const password = document.getElementById("signUpPassword").value;
+
+  fetch('http://localhost:8080/user?' + new URLSearchParams({
+    email: email,
+    institute: institute,
+    password: password
+  }), {method: 'POST'})
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      document.getElementById("successToast").classList.remove("d-none")
+      // TODO add login token
+      // TODO add link back to home
+    } else {
+      alert(data)
+      document.getElementById("failToastSignUp").classList.remove("d-none")
+    }
+  })
+  .catch(error => {
+    alert(error)
+    console.error('Error:', error);
+    document.getElementById("failToastSignUp").classList.remove("d-none");
+    //window.location.replace("error.html");
   });
 });

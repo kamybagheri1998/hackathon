@@ -16,7 +16,6 @@
       form.classList.add('was-validated')
       if (form.checkValidity()) {
         event.preventDefault()
-        document.getElementById("successToast").classList.remove("invisible")
       }
     }, false)
   })

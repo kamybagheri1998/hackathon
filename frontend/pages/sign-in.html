@@ -73,6 +73,10 @@
   <form id="signInForm" class="needs-validation" novalidate>
     <img class="mb-4" src="../assets/logo_full.png" alt="" width="200" height="100">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="alert alert-danger alert-dismissible fade show d-none" role="alert"
+         id="errorToastSignIn">
+      <strong>Apologies!</strong> There was an error while submitting your request. Please try again shortly
+    </div>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="signInEmail" placeholder="name@example.com" required>
@@ -102,15 +106,15 @@
         </div>
 
         <div class="modal-body p-5 pt-0">
-          <form class="needs-validation" novalidate>
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="signUpContactPerson"
-                     placeholder="Walter Frosch" required>
-              <label for="signUpContactPerson">Contact person</label>
-              <div class="invalid-feedback">
-                Valid contact person name is required.
-              </div>
-            </div>
+          <div class="alert alert-success alert-dismissible fade show d-none" role="alert"
+               id="successToastSignUp">
+            <strong>Success!</strong> Your registration has been submitted. You will receive an email as soon as your account has been activated.
+          </div>
+          <div class="alert alert-danger alert-dismissible fade show d-none" role="alert"
+               id="failToastSignUp">
+            <strong>Apologies!</strong> There was an error while submitting your request. Please try again shortly
+          </div>
+          <form id="signUpForm" class="needs-validation" novalidate>
             <div class="form-floating mb-3">
               <input type="text" class="form-control rounded-3" id="signUpInstitute"
                      placeholder="Hogwarts" required>
