@@ -171,7 +171,7 @@ My ...
 
 Maximilian Staas:
 
-My ...
+My personal goal is to get a first look into Kotlin and to improve my understanding on how to build a user-friendly, easy to navigate web page.
 
 Redon Kurta:
 
