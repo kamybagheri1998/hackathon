@@ -1,6 +1,7 @@
 package com.bs14.plugins
 
 import kotlinx.serialization.Serializable
+import java.util.UUID
 
 @Serializable
 data class ExposedUser(
@@ -8,5 +9,5 @@ data class ExposedUser(
         val email: String,
         val institute: String,
         val activated: Boolean,
-        val passwordHash: String
+        val password: String
 )

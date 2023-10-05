@@ -6,7 +6,7 @@ import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransacti
 import org.jetbrains.exposed.sql.transactions.transaction
 
 class DeviceService(private val database: Database) {
-    object DeviceType : Table() {
+    object DeviceType : Table("device_type") {
         val id = integer("id").autoIncrement()
         val name = varchar("name", 12)
 
