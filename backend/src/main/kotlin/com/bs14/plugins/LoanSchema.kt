@@ -6,7 +6,7 @@ import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransacti
 import org.jetbrains.exposed.sql.transactions.transaction
 
 class LoanService(private val database: Database) {
-    object LoanStatus : Table() {
+    object LoanStatus : Table("loan_status") {
         val id = integer("id").autoIncrement()
         val name = varchar("name", 12)
 

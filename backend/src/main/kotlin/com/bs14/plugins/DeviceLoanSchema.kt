@@ -7,7 +7,7 @@ import org.jetbrains.exposed.sql.transactions.transaction
 
 class DeviceLoanService(private val database: Database) {
 
-    object DeviceLoan : Table() {
+    object DeviceLoan : Table("device_loan") {
         val id = uuid("id")
         val loanId = reference("loan_id", LoanService.Loan.id)
         val deviceId = reference("device_id", DeviceService.Device.id)

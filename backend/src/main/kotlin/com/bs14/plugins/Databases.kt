@@ -9,6 +9,7 @@ import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.jetbrains.exposed.sql.*
+import java.util.*
 
 fun Application.configureDatabases() {
     val database = Database.connect(
@@ -23,11 +24,14 @@ fun Application.configureDatabases() {
     val deviceLoanService = DeviceLoanService(database)
     routing {
         // Create user
-        /*post("/users") {
-            val user = call.receive<ExposedUser>()
-            val id = userService.create(user)
+        post("/users") {
+            val email = call.request.queryParameters["email"]
+            val institute = call.request.queryParameters["institute"]
+            val password = call.request.queryParameters["password"]
+            val id = userService.create(email.toString(),institute.toString(),password.toString())
             call.respond(HttpStatusCode.Created, id)
         }
+        /*
         // Read user
         get("/users/{id}") {
             val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
