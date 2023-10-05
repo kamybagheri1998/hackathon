@@ -48,26 +48,24 @@ document.getElementById("signUpForm").addEventListener("submit", function (e) {
   const institute = document.getElementById("signUpInstitute").value;
   const password = document.getElementById("signUpPassword").value;
 
-  fetch('http://localhost:8080/user?' + new URLSearchParams({
-    email: email,
+  fetch('/user?' + new URLSearchParams({
     institute: institute,
+    email: email,
     password: password
   }), {method: 'POST'})
   .then(response => response.json())
   .then(data => {
     if (data.success) {
+      alert(data)
       document.getElementById("successToast").classList.remove("d-none")
       // TODO add login token
       // TODO add link back to home
     } else {
-      alert(data)
       document.getElementById("failToastSignUp").classList.remove("d-none")
     }
   })
   .catch(error => {
-    alert(error)
     console.error('Error:', error);
-    document.getElementById("failToastSignUp").classList.remove("d-none");
-    //window.location.replace("error.html");
+    window.location.replace("error.html");
   });
 });
