@@ -26,7 +26,6 @@ repositories {
 
 dependencies {
     implementation("ch.qos.logback:logback-classic:$versionLogback")
-    implementation("at.favre.lib:bcrypt:2.0.0")
 
     //runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
 
