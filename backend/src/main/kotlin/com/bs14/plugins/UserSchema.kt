@@ -10,7 +10,7 @@ import java.util.UUID
 
 class UserService(private val database: Database) {
     object User : Table() {
-        val id = uuid("id")
+        val id = integer("id").autoIncrement()
         val email = varchar("email", length = 256)
         val institute = varchar("institute", length = 256)
         val activated = bool("activated").default(false)
@@ -30,9 +30,8 @@ class UserService(private val database: Database) {
     suspend fun <T> dbQuery(block: suspend () -> T): T =
         newSuspendedTransaction(Dispatchers.IO) { block() }
 
-        suspend fun create(userEmail: String, userInstitute: String, password:String): UUID = dbQuery {
+        suspend fun create(userEmail: String, userInstitute: String, password:String): Int = dbQuery {
             User.insert {
-                it[id] = UUID.randomUUID()
                 it[email] = userEmail
                 it[institute] = userInstitute
                 it[passwordHash] = password.hashCode()
