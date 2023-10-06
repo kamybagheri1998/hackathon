@@ -10,12 +10,16 @@ import kotlin.test.*
 class ApplicationTest {
     @Test
     fun testRoot() = testApplication {
-        /*application {
+        application {
+
+            configureSecurity()
+            configureMonitoring()
+            configureSerialization()
+            configureDatabases()
             configureRouting()
         }
-        client.get("/").apply {
-            assertEquals(HttpStatusCode.OK, status)
-            assertEquals("Hello World!", bodyAsText())
-        }*/
+        client.post("/user?institute=t&email=ddddd@ffffd.de&password=1234").apply {
+            assertEquals(HttpStatusCode.Created, status)
+        }
     }
 }
