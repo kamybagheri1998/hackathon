@@ -20,7 +20,7 @@ document.getElementById("signInForm").addEventListener("submit", function (e) {
   }), {method: 'GET'})
   .then(response => response.json())
   .then(data => {
-    if (data.success) {
+    if (data.status === 201) {
       // TODO add login token
       window.location.replace("schoolPortal.html");
     } else {
@@ -53,13 +53,11 @@ document.getElementById("signUpForm").addEventListener("submit", function (e) {
     email: email,
     password: password
   }), {method: 'POST'})
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      alert(data)
-      document.getElementById("successToast").classList.remove("d-none")
+  .then(function (response) {
+    if (response.ok) {
       // TODO add login token
       // TODO add link back to home
+      document.getElementById("successToastSignUp").classList.remove("d-none")
     } else {
       document.getElementById("failToastSignUp").classList.remove("d-none")
     }
