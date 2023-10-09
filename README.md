@@ -166,6 +166,8 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 
 ## 3: "Go Viral" Post
 
+![Go viral header](portfolio/go_viral.png)
+
 🚀 🌟 **Exciting Opportunity to Make a Difference!** 🌟 🚀
 
 Hey there, amazing changemakers! 🌍✨
@@ -199,8 +201,6 @@ Imagine the joy on a child's face when they receive their very own device, openi
 Let's break barriers, one device at a time. 💪 Together, we can empower the next generation, providing them with the tools they need to succeed. Join us in shaping a brighter future! 🌟✨
 
 #TechForTomorrow #DigitalInclusion #EducationForAll #EmpowerTheFuture #MakeADifference 🌍✊
-
-![Alt text](image.png)
 
 ## 4: Personal Goals
 
