@@ -15,6 +15,7 @@
       * [1.1.6 Ideation Mindmap](#116-ideation-mindmap)
       * [1.1.7 School Usecase](#117-school-usecase)
       * [1.1.8 Business Usecase](#118-business-usecase)
+      * [1.1.9 Business Canvas](#119-business-canvas)
     * [1.2: Peer Feedback](#12-peer-feedback)
   * [2: Prototype](#2-prototype)
     * [2.1: Products](#21-products)
@@ -28,7 +29,7 @@
 
 ## 0: About
 ### 0.1: Current Stage
-**Prototype Phase: Sprint 2**
+**Prototype Phase: Sprint 3**
 
 We are currently in the stage of implementing and refining our solution.
 
@@ -41,8 +42,8 @@ We are currently in the stage of implementing and refining our solution.
 6. [x] Prototype Phase: Brainstorming
 7. [x] Prototype Phase: Planning
 8. [x] Prototype Phase: Sprint 1
-9. [ ] Prototype Phase: Sprint 2
-10. [ ] Prototype Phase: Sprint 3
+9. [x] Prototype Phase: Sprint 2
+10. [x] Prototype Phase: Sprint 3
 11. [ ] Presentation Phase
 
 ## 1: Portfolio
@@ -125,6 +126,10 @@ social exclusion due to their socio-economic status.
 #### 1.1.8 Business Usecase
 
 ![Business Usecase](portfolio/usecase_business.svg)
+
+#### 1.1.9 Business Canvas
+
+![Business Canvas](portfolio/business_canvas.jpg)
 
 ### 1.2: Peer Feedback
 
