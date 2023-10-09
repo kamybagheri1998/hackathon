@@ -200,6 +200,8 @@ Let's break barriers, one device at a time. 💪 Together, we can empower the ne
 
 #TechForTomorrow #DigitalInclusion #EducationForAll #EmpowerTheFuture #MakeADifference 🌍✊
 
+![Alt text](image.png)
+
 ## 4: Personal Goals
 
 Jan Leon Greve:
