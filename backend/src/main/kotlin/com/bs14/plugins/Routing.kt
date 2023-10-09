@@ -14,18 +14,10 @@ fun Application.configureRouting() {
     install(AutoHeadResponse)
 
     routing {
-        authenticate {
-            staticFiles("/", File("./www/pages")) {
-                exclude {
-                    file -> privateFiles.contains(file.name)
-                }
-            }
-        }
-
         staticFiles("/", File("./www/pages"), "index.html") {
             extensions("html")
             exclude {
-                file -> !privateFiles.contains(file.name)
+                file -> privateFiles.contains(file.name)
             }
         }
 
@@ -39,6 +31,15 @@ fun Application.configureRouting() {
 
         staticFiles("/scripts", File("./www/scripts")) {
             extensions("js")
+        }
+
+        authenticate {
+            staticFiles("/", File("./www/pages")) {
+                extensions("html")
+                exclude {
+                        file -> !privateFiles.contains(file.name)
+                }
+            }
         }
     }
 }
