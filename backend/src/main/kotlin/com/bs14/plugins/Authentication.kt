@@ -5,6 +5,7 @@ import com.auth0.jwt.algorithms.Algorithm
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
+import io.ktor.server.response.*
 
 val jwtAudience = "heartware_user"
 val jwtDomain = "http://127.0.0.1/"
@@ -23,8 +24,13 @@ fun Application.configureAuthentication() {
                     .withIssuer(jwtDomain)
                     .build()
             )
+
             validate { credential ->
                 if (credential.payload.audience.contains(jwtAudience)) JWTPrincipal(credential.payload) else null
+            }
+
+            challenge {_, _ ->
+                call.respondRedirect("/sign-in.html")
             }
         }
     }
