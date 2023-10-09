@@ -180,7 +180,7 @@ My personal goal is to get a first look into Kotlin and to improve my understand
 
 Redon Kurta:
 
-My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management.
+My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
 ## 4: Credits
 
