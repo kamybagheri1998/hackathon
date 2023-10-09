@@ -167,7 +167,7 @@ as well as Kotlin backend programming.
 
 Kamyab Bagherifar:
 
-My ...
+My personal goal is to get experience with Kotlin programming
 
 Maximilian Staas:
 
@@ -175,8 +175,7 @@ My personal goal is to get a first look into Kotlin and to improve my understand
 
 Redon Kurta:
 
-My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth with UML 
-and project management.
+My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management.
 
 ## 4: Credits
 
