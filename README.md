@@ -23,8 +23,9 @@
       * [2.1.2: Loan Endpoint](#212-loan-endpoint)
       * [2.1.3: User Endpoint](#213-user-endpoint)
       * [2.1.4: Database Diagram](#214-database-diagram)
-  * [3: Personal Goals](#3-personal-goals)
-  * [4: Credits](#4-credits)
+  * [3: "Go Viral" Post](#3-go-viral-post)
+  * [4: Personal Goals](#4-personal-goals)
+  * [5: Credits](#5-credits)
 <!-- TOC -->
 
 ## 0: About
@@ -163,7 +164,11 @@ In general, we think you guys have come up with a solid problem. Now we hope tha
 
 ![Loan Endpoint](prototype/database_diagram.svg)
 
-## 3: Personal Goals
+## 3: "Go Viral" Post
+
+
+
+## 4: Personal Goals
 
 Jan Leon Greve:
 
@@ -182,7 +187,7 @@ Redon Kurta:
 
 My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
-## 4: Credits
+## 5: Credits
 
 Jan Leon Greve\
 Kamyab Bagherifar\
