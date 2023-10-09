@@ -3,8 +3,11 @@ package com.bs14.plugins
 import DeviceLoanService
 import DeviceService
 import LoanService
+import com.auth0.jwt.JWT
+import com.auth0.jwt.algorithms.Algorithm
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.auth.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -18,42 +21,54 @@ fun Application.configureDatabases() {
         driver = "org.postgresql.Driver",
         password = "postgres"
     )
+
     val userService = UserService(database)
     val loanService = LoanService(database)
     val deviceService = DeviceService(database)
     val deviceLoanService = DeviceLoanService(database)
+
     routing {
-        // Create user
+        get("/user") {
+            val email = call.request.queryParameters["email"]!!
+            val passwordHash = call.request.queryParameters["password"]!!.hashCode()
+
+            if (!userService.login(email, passwordHash)) {
+                call.respond(HttpStatusCode.Unauthorized)
+                return@get
+            }
+
+            call.respond(HttpStatusCode.OK)
+        }
+
         post("/user") {
             val email = call.request.queryParameters["email"]
-            val institute = call.request.queryParameters["institute"]
-            val password = call.request.queryParameters["password"]
-            val id = userService.create(email.toString(),institute.toString(),password.toString())
-            call.respond(HttpStatusCode.Created, id)
+            if (email.isNullOrBlank()) {
+                call.respond(HttpStatusCode.BadRequest, "message email is empty")
+                return@post
+            }
+
+            val institute = call.request.queryParameters["institute"]!!
+            val password = call.request.queryParameters["password"]!!
+            val id = userService.create(email, institute, password)
+
+            val token = JWT.create()
+                .withAudience(jwtAudience)
+                .withIssuer(jwtAudience)
+                .withClaim("username", email)
+                .withExpiresAt(Date(System.currentTimeMillis() + 60000))
+                .sign(Algorithm.HMAC256(jwtSecret))
+
+            call.respond(HttpStatusCode.Created, hashMapOf("token" to token, "userId" to id))
         }
-        /*
-        // Read user
-        get("/users/{id}") {
-            val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
-            val user = userService.read(id)
-            if (user != null) {
-                call.respond(HttpStatusCode.OK, user)
-            } else {
-                call.respond(HttpStatusCode.NotFound)
+
+        authenticate {
+            put("/user") {
+
+            }
+
+            delete("/user") {
+
             }
         }
-        // Update user
-        put("/users/{id}") {
-            val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
-            val user = call.receive<ExposedUser>()
-            userService.update(id, user)
-            call.respond(HttpStatusCode.OK)
-        }
-        // Delete user
-        delete("/users/{id}") {
-            val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
-            userService.delete(id)
-            call.respond(HttpStatusCode.OK)
-        }*/
     }
 }

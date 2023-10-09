@@ -1,6 +1,6 @@
 val versionKtor: String by project
 val versionKotlin: String by project
-val versionLogback: String by project
+val versionLogging: String by project
 val versionExposed: String by project
 val versionH2: String by project
 
@@ -25,20 +25,19 @@ repositories {
 }
 
 dependencies {
-    implementation("ch.qos.logback:logback-classic:$versionLogback")
+    implementation("io.github.oshai:kotlin-logging-jvm:$versionLogging")
 
-    //runtimeOnly("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
-
-    implementation("io.ktor:ktor-server-core-jvm")
-    implementation("io.ktor:ktor-server-auth-jvm")
-    implementation("io.ktor:ktor-server-sessions-jvm")
-    implementation("io.ktor:ktor-server-auto-head-response-jvm")
-    implementation("io.ktor:ktor-server-host-common-jvm")
-    implementation("io.ktor:ktor-server-call-logging-jvm")
-    implementation("io.ktor:ktor-server-content-negotiation-jvm")
-    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm")
-    implementation("io.ktor:ktor-server-netty-jvm")
-    testImplementation("io.ktor:ktor-server-tests-jvm")
+    implementation("io.ktor:ktor-server-core-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-auth-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-sessions-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-auto-head-response-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-host-common-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-call-logging-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-content-negotiation-jvm:2.3.5")
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-netty-jvm:2.3.5")
+    implementation("io.ktor:ktor-server-auth-jwt-jvm:2.3.5")
+    testImplementation("io.ktor:ktor-server-tests-jvm:2.3.5")
 
     implementation("org.jetbrains.exposed:exposed-core:$versionExposed")
     implementation("org.jetbrains.exposed:exposed-jdbc:$versionExposed")

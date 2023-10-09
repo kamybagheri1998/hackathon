@@ -31,11 +31,22 @@ class UserService(private val database: Database) {
         newSuspendedTransaction(Dispatchers.IO) { block() }
 
         suspend fun create(userEmail: String, userInstitute: String, password:String): Int = dbQuery {
+            val existingUser = User.select { User.email eq userEmail }
+                .singleOrNull()
+
+            if (existingUser != null)
+                return@dbQuery -1
+
             User.insert {
                 it[email] = userEmail
                 it[institute] = userInstitute
                 it[passwordHash] = password.hashCode()
             }[User.id]
+        }
+
+        suspend fun login(email: String, passwordHash: Int): Boolean = dbQuery {
+            User.select { (User.email eq email) and (User.passwordHash eq passwordHash) }
+                .any()
         }
 
 /*
