@@ -14,20 +14,20 @@ document.getElementById("signInForm").addEventListener("submit", function (e) {
 
   // TODO add post api url
   // TODO see order placed html for div with invalid email etc. -> turn visible on bad input
-  fetch('http://localhost:5432/user?' + new URLSearchParams({
+  fetch('/user?' + new URLSearchParams({
     email: email,
     password: password
   }), {method: 'GET'})
   .then(response => response.json())
-  .then(data => {
-    if (data.status === 201) {
-      // TODO add login token
+  .then(function (response) {
+    if (response.ok) {
       window.location.replace("schoolPortal.html");
     } else {
-      document.getElementById("failToastSignIn").classList.remove("d-none")
+      document.getElementById("failToastSignIn").classList.remove("d-none");
     }
   })
   .catch(error => {
+    console.log('test', 'hello');
     console.error('Error:', error);
     window.location.replace("error.html");
   });
