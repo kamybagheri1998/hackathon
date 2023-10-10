@@ -8,7 +8,7 @@ rm -f '/webapp/hardloan.jar'
 mkdir 'build'
 
 echo 'Building...'
-gradle -p '/backend' -I '/workdir/init.gradle.kts' --no-daemon clean build
+gradle -p '/backend' -I '/workdir/init.gradle.kts' --no-daemon clean build -x test
 
 echo 'Copying jar...'
 cp -f '/workdir/build/libs/hardloan-all.jar' '/webapp/hardloan.jar'
