@@ -204,24 +204,49 @@ Let's break barriers, one device at a time. 💪 Together, we can empower the ne
 
 ## 4: Personal Goals
 
-Jan Leon Greve:
+_Jan Leon Greve:_
+
+Goal:
 
 My personal goal is to increase my experience with UML and project planning,
 as well as Kotlin backend programming.
 
-Kamyab Bagherifar:
+Reflection:
+
+On reflection, I managed to greatly increase my experience with and knowledge of Kotlin,
+especially regarding web app programming. 
+I also gained a great deal of experience with designing UML
+using PlantUML and had and opportunity to refine my knowledge of project planning.
+
+_Kamyab Bagherifar:_
+
+Goal:
 
 My personal goal is to get experience with Kotlin programming
 
-Maximilian Staas:
+Reflection:
+
+...
+
+_Maximilian Staas:_
+
+Goal:
 
 My personal goal is to get a first look into Kotlin and to improve my understanding on how to build a user-friendly, easy to navigate web page.
 
+Reflection:
+
 I know am able to read and understand basic Kotlin code and got a better understanding of the elements of a modern webpage.
 
-Redon Kurta:
+_Redon Kurta:_
 
-My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
+Goal:
+
+My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. 
+
+Reflection:
+
+All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
 ## 5: Credits
 
