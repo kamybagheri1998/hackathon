@@ -29,7 +29,7 @@ services:
     container_name: hardloan_gradle
     restart: no
     working_dir: /workdir
-    entrypoint: /workdir/entry.sh
+    entrypoint: sh /workdir/entry.sh
     volumes:
       - src_backend:/backend
       - src_frontend:/frontend
@@ -41,6 +41,8 @@ services:
     restart: no
     working_dir: /webapp
     entrypoint: sh /webapp/entry.sh
+    environment:
+      - HARDLOAN_DB_URL=database
     depends_on:
       gradle:
         condition: service_completed_successfully
