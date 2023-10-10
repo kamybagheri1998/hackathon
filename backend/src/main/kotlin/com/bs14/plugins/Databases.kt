@@ -5,21 +5,23 @@ import DeviceService
 import LoanService
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
+import io.github.oshai.kotlinlogging.KLogger
 import io.github.oshai.kotlinlogging.KotlinLogging
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
-import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import org.jetbrains.exposed.sql.*
+import io.ktor.server.sessions.*
+import org.jetbrains.exposed.sql.Database
 import java.util.*
 
-private val LOG = KotlinLogging.logger {}
+private val LOG: KLogger = KotlinLogging.logger {}
+private val DB_URL: String = System.getenv("HARDLOAN_DB_URL") ?: "127.0.0.1"
 
 fun Application.configureDatabases() {
     val database = Database.connect(
-        url = "jdbc:postgresql://database:5432/postgres",
+        url = "jdbc:postgresql://$DB_URL:5432/postgres",
         user = "postgres",
         driver = "org.postgresql.Driver",
         password = "postgres"
@@ -32,20 +34,14 @@ fun Application.configureDatabases() {
 
     routing {
         get("/user") {
-            LOG.info { "Test 1" }
             val email: String = call.request.queryParameters["email"]!!
-            LOG.info { "Test 2" }
             val password: String = call.request.queryParameters["password"]!!
-            LOG.info { "Test 3" }
             val passwordHash: Int = password.hashCode()
-            LOG.info { "Test 4" }
 
             if (!userService.login(email, passwordHash)) {
                 call.respond(HttpStatusCode.Unauthorized)
                 return@get
             }
-
-            LOG.info { "Test 5" }
 
             val token = JWT.create()
                 .withAudience(jwtAudience)
@@ -54,7 +50,8 @@ fun Application.configureDatabases() {
                 .withExpiresAt(Date(System.currentTimeMillis() + 60000))
                 .sign(Algorithm.HMAC256(jwtSecret))
 
-            call.respond(HttpStatusCode.OK, hashMapOf("token" to token))
+            call.sessions.set("JWT", token)
+            call.respond(HttpStatusCode.OK)
         }
 
         post("/user") {
@@ -71,7 +68,7 @@ fun Application.configureDatabases() {
             call.respond(HttpStatusCode.Created, hashMapOf("userId" to id))
         }
 
-        authenticate {
+        authenticate("auth-jwt") {
             put("/user") {
 
             }

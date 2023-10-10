@@ -33,7 +33,7 @@ fun Application.configureRouting() {
             extensions("js")
         }
 
-        authenticate {
+        authenticate("auth-jwt") {
             staticFiles("/", File("./www/pages")) {
                 extensions("html")
                 exclude {
