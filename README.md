@@ -206,11 +206,11 @@ Let's break barriers, one device at a time. 💪 Together, we can empower the ne
 
 _Jan Leon Greve:_
 
-  Goal:
+  **Goal:**
   My personal goal is to increase my experience with UML and project planning,
   as well as Kotlin backend programming.
 
-  Reflection:
+  **Reflection:**
   On reflection, I managed to greatly increase my experience with and knowledge of Kotlin,
   especially regarding web app programming. 
   I also gained a great deal of experience with designing UML
@@ -218,26 +218,26 @@ _Jan Leon Greve:_
 
 _Kamyab Bagherifar:_
 
-  Goal:
+  **Goal:**
   My personal goal is to get experience with Kotlin programming and improve my knowledge in kotlin 
 
-  Reflection:
+  **Reflection:**
   I'm able to create simple REST-API with JWT Authentication using Ktor and Exposed Framework.
 
 _Maximilian Staas:_
 
-  Goal:
+  **Goal:**
   My personal goal is to get a first look into Kotlin and to improve my understanding on how to build a user-friendly, easy to navigate web page.
 
-  Reflection:
+  **Reflection:**
   I know am able to read and understand basic Kotlin code and got a better understanding of the elements of a modern webpage.
 
 _Redon Kurta:_
 
-  Goal:
+  **Goal:**
   My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. 
 
-  Reflection:
+  **Reflection:**
   All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
 ## 5: Credits
