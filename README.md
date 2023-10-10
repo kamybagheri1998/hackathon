@@ -206,17 +206,15 @@ Let's break barriers, one device at a time. 💪 Together, we can empower the ne
 
 _Jan Leon Greve:_
 
-Goal:
+  Goal:
+  My personal goal is to increase my experience with UML and project planning,
+  as well as Kotlin backend programming.
 
-My personal goal is to increase my experience with UML and project planning,
-as well as Kotlin backend programming.
-
-Reflection:
-
-On reflection, I managed to greatly increase my experience with and knowledge of Kotlin,
-especially regarding web app programming. 
-I also gained a great deal of experience with designing UML
-using PlantUML and had and opportunity to refine my knowledge of project planning.
+  Reflection:
+  On reflection, I managed to greatly increase my experience with and knowledge of Kotlin,
+  especially regarding web app programming. 
+  I also gained a great deal of experience with designing UML
+  using PlantUML and had and opportunity to refine my knowledge of project planning.
 
 _Kamyab Bagherifar:_
 
