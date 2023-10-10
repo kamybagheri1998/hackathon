@@ -220,32 +220,27 @@ using PlantUML and had and opportunity to refine my knowledge of project plannin
 
 _Kamyab Bagherifar:_
 
-Goal:
+  Goal:
+  My personal goal is to get experience with Kotlin programming and improve my knowledge in kotlin 
 
-My personal goal is to get experience with Kotlin programming and improve my knowledge in kotlin 
+  Reflection:
+  I'm able to create simple REST-API with JWT Authentication using Ktor and Exposed Framework.
 
-Reflection:
-
-I'm able to create simple REST-API with JWT Authentication using Ktor and Exposed Framework.
 _Maximilian Staas:_
 
-Goal:
+  Goal:
+  My personal goal is to get a first look into Kotlin and to improve my understanding on how to build a user-friendly, easy to navigate web page.
 
-My personal goal is to get a first look into Kotlin and to improve my understanding on how to build a user-friendly, easy to navigate web page.
-
-Reflection:
-
-I know am able to read and understand basic Kotlin code and got a better understanding of the elements of a modern webpage.
+  Reflection:
+  I know am able to read and understand basic Kotlin code and got a better understanding of the elements of a modern webpage.
 
 _Redon Kurta:_
 
-Goal:
+  Goal:
+  My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. 
 
-My personal goal describes my desire to expand my Kotlin Programming skills and get more in depth into project management. 
-
-Reflection:
-
-All in all, through dedication and discipline, we succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, We encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
+  Reflection:
+  All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
 ## 5: Credits
 
