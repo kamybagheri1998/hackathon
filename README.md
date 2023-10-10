@@ -222,12 +222,11 @@ _Kamyab Bagherifar:_
 
 Goal:
 
-My personal goal is to get experience with Kotlin programming
+My personal goal is to get experience with Kotlin programming and improve my knowledge in kotlin 
 
 Reflection:
 
-...
-
+I'm able to create simple REST-API with JWT Authentication using Ktor and Exposed Framework.
 _Maximilian Staas:_
 
 Goal:
