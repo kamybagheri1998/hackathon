@@ -2,11 +2,16 @@ package com.bs14.plugins
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
+import io.github.oshai.kotlinlogging.KLogger
+import io.github.oshai.kotlinlogging.KotlinLogging
 import io.ktor.http.auth.*
 import io.ktor.server.application.*
 import io.ktor.server.auth.*
 import io.ktor.server.auth.jwt.*
 import io.ktor.server.response.*
+
+
+private val LOG: KLogger = KotlinLogging.logger {}
 
 const val jwtAudience: String = "heartware_user"
 const val jwtDomain  : String = "http://127.0.0.1/"
@@ -15,7 +20,7 @@ const val jwtSecret  : String = "27e58cf8036a0bec7842bcfa741b8abea436352aa23a15a
 
 fun Application.configureAuthentication() {
     authentication {
-        jwt("auth-jwt") {
+        jwt {
             realm = jwtRealm
             verifier(
                 JWT
@@ -26,6 +31,9 @@ fun Application.configureAuthentication() {
             )
 
             authHeader { call ->
+                LOG.info { "authheader" }
+                LOG.info { call.request.cookies }
+
                 val authCookie = call.request.cookies["JWT"] ?: return@authHeader null
                 if (authCookie.isBlank()) {
                     return@authHeader null
@@ -34,11 +42,13 @@ fun Application.configureAuthentication() {
                 try {
                     parseAuthorizationHeader(authCookie)
                 } catch (ex: Exception) {
+                    LOG.info { ex }
                     null
                 }
             }
 
             validate { credential ->
+                LOG.info { credential }
                 if (credential.payload.audience.contains(jwtAudience)) JWTPrincipal(credential.payload) else null
             }
 

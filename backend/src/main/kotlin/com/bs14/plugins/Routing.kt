@@ -8,7 +8,7 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import java.io.File
 
-private val privateFiles = setOf("orderHistory.html", "orderPlace.html", "schoolPortal.html")
+private val privateFiles = setOf("")
 
 fun Application.configureRouting() {
     install(AutoHeadResponse)
@@ -33,7 +33,7 @@ fun Application.configureRouting() {
             extensions("js")
         }
 
-        authenticate("auth-jwt") {
+        authenticate {
             staticFiles("/", File("./www/pages")) {
                 extensions("html")
                 exclude {

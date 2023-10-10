@@ -7,10 +7,11 @@ import kotlin.collections.set
 
 private val LOG = KotlinLogging.logger {}
 
+data class JwtSession(val value: String = "")
+
 fun Application.configureSessions() {
     LOG.info { "Configuring sessions..." }
 
-    data class JwtSession(val value: String = "")
     install(Sessions) {
         cookie<JwtSession>("JWT") {
             cookie.path = "/"

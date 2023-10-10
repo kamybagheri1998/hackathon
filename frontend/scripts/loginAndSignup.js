@@ -18,7 +18,7 @@ document.getElementById("signInForm").addEventListener("submit", function (e) {
     email: email,
     password: password
   }), {method: 'GET'})
-  .then(response => response.json())
+  //.then(response => response.json())
   .then(function (response) {
     if (response.ok) {
       window.location.replace("schoolPortal.html");

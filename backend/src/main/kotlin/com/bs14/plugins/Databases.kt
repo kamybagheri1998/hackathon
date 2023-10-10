@@ -50,7 +50,7 @@ fun Application.configureDatabases() {
                 .withExpiresAt(Date(System.currentTimeMillis() + 60000))
                 .sign(Algorithm.HMAC256(jwtSecret))
 
-            call.sessions.set("JWT", token)
+            call.sessions.set("JWT", JwtSession("Bearer $token"))
             call.respond(HttpStatusCode.OK)
         }
 
@@ -68,7 +68,12 @@ fun Application.configureDatabases() {
             call.respond(HttpStatusCode.Created, hashMapOf("userId" to id))
         }
 
-        authenticate("auth-jwt") {
+        get("/test1") {
+            val jwt = call.sessions.get("JWT")
+            LOG.info { jwt }
+        }
+
+        authenticate {
             put("/user") {
 
             }
