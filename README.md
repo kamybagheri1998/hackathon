@@ -246,7 +246,7 @@ My personal goal describes my desire to expand my Kotlin Programming skills and 
 
 Reflection:
 
-All in all, through dedication and discipline, I succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, I encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
+All in all, through dedication and discipline, we succeeded in obtaining knowledge regarding Kotlin programming and integrating a database connection to a Kotlin project. Utilizing pair programming, We encountered the highest learning rate as we could share our knowledge and, thus, learn a lot from each other.
 
 ## 5: Credits
 
